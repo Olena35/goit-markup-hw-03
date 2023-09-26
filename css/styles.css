@@ -1,0 +1,269 @@
+/* цвет осн текста #212121 */
+/* акцент #2196F3 */
+/* вторичн цвет текста #757575 */
+/* цвет фона вторичн #F5F4FA */
+
+:root {
+--primary-text-color: #757575;
+--title-text-color: #212121 ;
+--accent-color: #2196F3;
+--primary-bg-color: #F5F4FA;
+}
+
+/* Загальні css дані для обох html */
+
+body {
+    color: #757575;
+    background-color: #FFF;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: 0.42px;
+}
+
+/* Header */
+
+.site-nav .link {
+    color: var(--title-text-color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.28px;
+    letter-spacing: 0.28px;
+    text-decoration: none;
+}
+
+.studio,
+.portfolio {
+    color: #2196F3;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.28px;
+    letter-spacing: 0.28px;
+    text-decoration: none;
+}
+
+
+/* logo */
+
+.logo {
+    color: var(--accent-color);
+    font-family: Raleway, sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.38;
+    letter-spacing: 0.78px;
+    text-decoration: none;
+}
+
+.logo-header {
+    color: #000;
+}
+
+.logo-footer {
+    color: #FFF;
+}
+
+
+/* Contacts */
+
+.contacts a {
+    color: var(--primary-text-color);
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.28px;
+    text-decoration: none;
+}
+
+.site-nav :hover,
+.site-nav :focus {
+    color: var(--accent-color);
+}
+
+.contacts :hover,
+.contacts :focus {
+    color: var(--accent-color);
+}
+
+.contacts .link {
+    text-decoration: none;
+}
+
+/* List */
+
+.list {
+    list-style: none;
+}
+
+/* Стили для index.html */
+
+/* Hero */
+
+.hero {
+    background-color: #2F303A;
+}
+
+.hero-title {
+    color: var(--title-text-color);
+    color: #FFF;
+    text-align: center;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    letter-spacing: 2.64px;
+    text-transform: uppercase;
+}
+
+/* Button */
+
+.button-studio {
+    color: #FFFFFF;
+    background-color: var(--accent-color);
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.96px;
+    cursor: pointer;
+}
+
+.button-studio:hover,
+.button-studio:focus {
+    color: var(--accent-color);
+}
+
+/* Section и Work */
+
+.section-title,
+.worklist-title {
+    color: var(--title-text-color);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 1.08px;
+}
+ 
+/* Features */
+
+.feature-list .title {
+    color: var(--title-text-color);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+
+
+/* Team */
+
+.name-team {
+    color: var(--title-text-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.19;
+    line-height: 1.19;
+    letter-spacing: 0.48px;
+}
+
+.team-list p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.19;
+    line-height: 1.19;
+    letter-spacing: 0.48px;
+}
+
+
+.team-color {
+    background-color: var(--primary-bg-color);
+}
+
+/* Footer */
+
+.footer-section {
+    background-color: #2F303A;
+}
+
+
+.footer-adress {
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1, 7;
+    letter-spacing: 0.42px;
+}
+
+
+.footer-contacts a {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.7;
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: 0.42px;
+    text-decoration: none;
+}
+
+.footer-contacts :hover,
+.footer-contacts :focus {
+    color: var(--accent-color);
+}
+
+
+
+/* Стили для portfolio */
+
+.portfolio-title {
+opacity: 0;
+}
+
+/* Projects */
+
+.project-list h2 {
+    color: var(--title-text-color);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 1.08px;
+    text-decoration: none;
+}
+
+.project-list p {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.88;
+    letter-spacing: 0.48px;
+}
+
+.project-list a {
+    text-decoration: none;
+}
+
+/* Button list for portfolio */
+
+.button-list button{
+    color: var(--title-text-color);
+    background-color: var(--primary-bg-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.63;
+    letter-spacing: 0.48px;
+    cursor: pointer;
+}
+
+.button-list button:hover {
+    color: var(--primary-bg-color);
+    background-color: #2196F3;
+}
+
+
+
