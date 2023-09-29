@@ -1,3 +1,24 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+   
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+ 
+
 /* цвет осн текста #212121 */
 /* акцент #2196F3 */
 /* вторичн цвет текста #757575 */
@@ -32,6 +53,25 @@ body {
     letter-spacing: 0.28px;
     letter-spacing: 0.28px;
     text-decoration: none;
+}
+
+.page-header {
+
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: transparent;
+    
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: transparent;
+    
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #ECECEC;
+
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: transparent;
 }
 
 .studio,
@@ -77,6 +117,7 @@ body {
     line-height: 1.14;
     letter-spacing: 0.28px;
     text-decoration: none;
+
 }
 
 .site-nav :hover,
@@ -96,7 +137,21 @@ body {
 /* List */
 
 .list {
+    padding: 0;
+    margin: 0;
     list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* Стили для index.html */
@@ -105,9 +160,12 @@ body {
 
 .hero {
     background-color: #2F303A;
+    text-align: center;
 }
 
 .hero-title {
+    margin-top: 0;
+    margin-bottom: 100px;
     color: var(--title-text-color);
     color: #FFF;
     text-align: center;
@@ -129,6 +187,10 @@ body {
     line-height: 1.88;
     letter-spacing: 0.96px;
     cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    padding: 10px 24px;
+    min-width: 200px;
 }
 
 .button-studio:hover,
@@ -138,14 +200,34 @@ body {
 
 /* Section и Work */
 
-.section-title,
+.section {
+padding-top: 94px;
+padding-bottom: 118px ;
+}
+
+.section.no-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.section-title {
+    opacity: 0;
+}
+
+
 .worklist-title {
+    margin-top: 0;
     color: var(--title-text-color);
     text-align: center;
     font-size: 36px;
     font-weight: 700;
     line-height: 1.17;
     letter-spacing: 1.08px;
+}
+
+.work-list > .item {
+    padding-top: 92px;
+    padding-top: 0;
 }
  
 /* Features */
@@ -157,8 +239,15 @@ body {
     line-height: 1.14;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
+
+.feature-list p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
 /* Team */
 
@@ -250,7 +339,7 @@ opacity: 0;
 
 /* Button list for portfolio */
 
-.button-list button{
+.button-list button {
     color: var(--title-text-color);
     background-color: var(--primary-bg-color);
     font-size: 16px;
@@ -258,6 +347,10 @@ opacity: 0;
     line-height: 1.63;
     letter-spacing: 0.48px;
     cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    padding: 6px 22px;
+    text-align: center;
 }
 
 .button-list button:hover {
@@ -265,5 +358,10 @@ opacity: 0;
     background-color: #2196F3;
 }
 
+
+
+/* виділення блоку
+outline: 2px solid tomato;
+*/
 
 
