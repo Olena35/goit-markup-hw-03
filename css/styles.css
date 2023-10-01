@@ -485,6 +485,7 @@ height: 0;
     height: 404px;
     display: inline-block;
     border: 1px solid #EEEEEE;
+    border-top: none;
     flex-shrink: 0;
     padding-bottom: 20px;
 }
