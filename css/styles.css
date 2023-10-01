@@ -9,6 +9,7 @@ html {
 }
 
 
+
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -16,8 +17,32 @@ html {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
+
+ /* border: 2px solid tomato; */
 }
  
+/* Утіліти */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
 
 /* цвет осн текста #212121 */
 /* акцент #2196F3 */
@@ -45,26 +70,16 @@ body {
 
 /* Header */
 
-.site-nav .link {
-    color: var(--title-text-color);
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.28px;
-    letter-spacing: 0.28px;
-    text-decoration: none;
-}
-
 .page-header {
 
     border-top-width: 1px;
     border-top-style: solid;
     border-top-color: transparent;
-    
+
     border-right-width: 1px;
     border-right-style: solid;
     border-right-color: transparent;
-    
+
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: #ECECEC;
@@ -74,8 +89,41 @@ body {
     border-left-color: transparent;
 }
 
+
+.site-nav {
+    display: flex;
+}
+
+.site-nav .point + .point {
+    margin-left: 50px;
+}
+
+
+.site-nav .link {
+    display: block;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    color: var(--title-text-color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.28px;
+    letter-spacing: 0.28px;
+    text-decoration: none;
+}
+
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+
 .studio,
 .portfolio {
+    display: block;
+    padding-top: 21px;
+    padding-bottom: 21px;
     color: #2196F3;
     font-size: 14px;
     font-weight: 500;
@@ -90,6 +138,7 @@ body {
 
 .logo {
     color: var(--accent-color);
+    margin-right: 93px;
     font-family: Raleway, sans-serif;
     font-size: 26px;
     font-weight: 700;
@@ -134,25 +183,17 @@ body {
     text-decoration: none;
 }
 
-/* List */
-
-.list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+.contacts {
+    display: flex;
+    margin-left: auto;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-    margin-top: 0;
-    margin-bottom: 0;
+.contacts .point + .point {
+    margin-left: 40px;
 }
+
+
+
 
 /* Стили для index.html */
 
@@ -161,11 +202,13 @@ ul {
 .hero {
     background-color: #2F303A;
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-title {
     margin-top: 0;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
     color: var(--title-text-color);
     color: #FFF;
     text-align: center;
@@ -200,10 +243,24 @@ ul {
 
 /* Section и Work */
 
+.work {
+    padding-bottom: 94px;
+    }
+
+
+.worklist {
+    display: flex;
+}
+
+.worklist .item + .item {
+    margin-left: 30px;
+}
+
 .section {
 padding-top: 94px;
-padding-bottom: 118px ;
+padding-bottom: 94px;
 }
+
 
 .section.no-padding {
     padding-top: 0;
@@ -211,12 +268,15 @@ padding-bottom: 118px ;
 }
 
 .section-title {
+    height: 0;
     opacity: 0;
 }
 
 
 .worklist-title {
+    padding-top: 0;
     margin-top: 0;
+    margin-bottom: 50px;
     color: var(--title-text-color);
     text-align: center;
     font-size: 36px;
@@ -224,12 +284,9 @@ padding-bottom: 118px ;
     line-height: 1.17;
     letter-spacing: 1.08px;
 }
+    
 
-.work-list > .item {
-    padding-top: 92px;
-    padding-top: 0;
-}
- 
+
 /* Features */
 
 .feature-list .title {
@@ -244,30 +301,63 @@ padding-bottom: 118px ;
 }
 
 
-.feature-list p {
-    margin-top: 0;
-    margin-bottom: 0;
+.feature-list {
+    display: flex;
 }
 
 /* Team */
 
+.team-title {
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 50px;
+    color: var(--title-text-color);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 1.08px;
+
+}
+
+.team-list {
+    display: flex;
+}
+
+.team-card {
+    width: 270px;
+    height: 368px;
+    flex-shrink: 0;
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-list .team-card + .team-card {
+    margin-left: 30px;
+}
+
 .name-team {
+    margin-bottom: 10px;
     color: var(--title-text-color);
     font-size: 16px;
     font-weight: 500;
     line-height: 1.19;
-    line-height: 1.19;
     letter-spacing: 0.48px;
+    text-align: center;
 }
 
 .team-list p {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.19;
-    line-height: 1.19;
     letter-spacing: 0.48px;
+    text-align: center;
 }
 
+.card-info {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
 .team-color {
     background-color: var(--primary-bg-color);
@@ -277,10 +367,13 @@ padding-bottom: 118px ;
 
 .footer-section {
     background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 
 .footer-adress {
+    padding-top: 28px;
     color: #FFF;
     font-size: 14px;
     font-style: normal;
@@ -306,36 +399,18 @@ padding-bottom: 118px ;
     color: var(--accent-color);
 }
 
-
+.footer-contacts .contacts-point {
+    margin-top: 12px;
+}
 
 /* Стили для portfolio */
 
 .portfolio-title {
 opacity: 0;
+height: 0;
 }
 
 /* Projects */
-
-.project-list h2 {
-    color: var(--title-text-color);
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 2;
-    letter-spacing: 1.08px;
-    text-decoration: none;
-}
-
-.project-list p {
-    color: var(--primary-text-color);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.88;
-    letter-spacing: 0.48px;
-}
-
-.project-list a {
-    text-decoration: none;
-}
 
 /* Button list for portfolio */
 
@@ -359,9 +434,72 @@ opacity: 0;
 }
 
 
+.button-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
 
-/* виділення блоку
-outline: 2px solid tomato;
-*/
+.button-list .button-point+.button-point {
+    margin-left: 8px;
+}
+
+/* Projects list */
+
+.project-list {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0;
+    list-style: none;
+}
+
+.project-list h2 {
+    color: var(--title-text-color);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 1.08px;
+    text-decoration: none;
+}
+
+.project-list p {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.88;
+    letter-spacing: 0.48px;
+}
+
+.project-list a {
+    text-decoration: none;
+}
+
+.little-container {
+    width: 370px;
+    height: 404px;
+    display: inline-block;
+    border: 1px solid #EEEEEE;
+    flex-shrink: 0;
+    padding-bottom: 20px;
+}
+
+.description {
+    padding: 20px 24px;
+}
+
+.little-container :nth-child(3n) {
+    margin-right: 0;
+}
+
+.little-container :nth-last-child(-n + 3) {
+    margin-bottom: 0;
+}
+
 
 
