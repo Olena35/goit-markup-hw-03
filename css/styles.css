@@ -71,27 +71,15 @@ body {
 /* Header */
 
 .page-header {
-
-    border-top-width: 1px;
-    border-top-style: solid;
-    border-top-color: transparent;
-
-    border-right-width: 1px;
-    border-right-style: solid;
-    border-right-color: transparent;
-
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: #ECECEC;
-
-    border-left-width: 1px;
-    border-left-style: solid;
-    border-left-color: transparent;
 }
 
 
 .site-nav {
     display: flex;
+    margin-left: 93px;
 }
 
 .site-nav .point + .point {
@@ -101,8 +89,8 @@ body {
 
 .site-nav .link {
     display: block;
-    padding-top: 21px;
-    padding-bottom: 21px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--title-text-color);
     font-size: 14px;
     font-weight: 500;
@@ -122,8 +110,8 @@ body {
 .studio,
 .portfolio {
     display: block;
-    padding-top: 21px;
-    padding-bottom: 21px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: #2196F3;
     font-size: 14px;
     font-weight: 500;
@@ -137,8 +125,8 @@ body {
 /* logo */
 
 .logo {
+    margin-right: 0;
     color: var(--accent-color);
-    margin-right: 93px;
     font-family: Raleway, sans-serif;
     font-size: 26px;
     font-weight: 700;
@@ -208,10 +196,12 @@ body {
 
 .hero-title {
     margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 30px;
+    width: 696px;
     color: var(--title-text-color);
     color: #FFF;
-    text-align: center;
     font-size: 44px;
     font-weight: 900;
     line-height: 1.36;
@@ -243,6 +233,10 @@ body {
 
 /* Section и Work */
 
+.image {
+    display: block;
+}
+
 .work {
     padding-bottom: 94px;
     }
@@ -269,7 +263,7 @@ padding-bottom: 94px;
 
 .section-title {
     height: 0;
-    opacity: 0;
+    visibility: hidden;
 }
 
 
@@ -304,6 +298,15 @@ padding-bottom: 94px;
 .feature-list {
     display: flex;
 }
+
+.feature-description {
+    width: 270px;
+}
+
+.feature-list .feature-description + .feature-description {
+    margin-left: 30px;
+}
+
 
 /* Team */
 
@@ -373,7 +376,7 @@ padding-bottom: 94px;
 
 
 .footer-adress {
-    padding-top: 28px;
+    margin-top: 28px;
     color: #FFF;
     font-size: 14px;
     font-style: normal;
@@ -382,6 +385,9 @@ padding-bottom: 94px;
     letter-spacing: 0.42px;
 }
 
+.footer-contacts {
+    margin-top: 12px;
+}
 
 .footer-contacts a {
     color: rgba(255, 255, 255, 0.60);
@@ -399,14 +405,14 @@ padding-bottom: 94px;
     color: var(--accent-color);
 }
 
-.footer-contacts .contacts-point {
+.footer-contacts .contacts-point + .contacts-point {
     margin-top: 12px;
 }
 
 /* Стили для portfolio */
 
 .portfolio-title {
-opacity: 0;
+visibility: hidden;
 height: 0;
 }
 
@@ -447,11 +453,6 @@ height: 0;
 /* Projects list */
 
 .project-list {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -492,6 +493,10 @@ height: 0;
 
 .description {
     padding: 20px 24px;
+}
+
+.description p {
+    margin-top: 4px;
 }
 
 .little-container :nth-child(3n) {
